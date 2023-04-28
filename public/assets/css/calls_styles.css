@@ -1,0 +1,156 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+body{
+    height: 100%;background: #f2f2f2;
+}
+* {
+    box-sizing: border-box
+}
+
+.container-fluid{
+    margin: 50px auto;
+}
+.container-fluid-onlymb{
+    padding: 0 15px;
+    margin: 0 auto 50px auto;
+}
+.none {display: none!important;}
+table, th, td {
+    border: 0.5px solid #eeeeee;
+    border-collapse: collapse;
+}
+
+.table {
+    width: 100%
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.header-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: #2d3748;
+    z-index: 9;
+}
+.header-max{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-header-menu {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.left-header-menu a.active {
+    background: rgb(226, 220, 213);
+}
+.left-header-menu a {
+    width: 100%;
+    max-width: 170px;
+    height: 30px;
+    text-align: center;
+    background: #fff;
+    text-decoration: none;
+    color: #2d3748;
+    line-height: 30px;
+}
+.right-header-menu {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    width: 100%;
+}
+.right-header-menu button{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    max-width: 150px;
+    border: none;
+}
+
+.h75{
+    height: 75px;
+    width: 100%;
+}
+/*modal*/
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.84);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999999;
+}
+.modal-content{
+    width: 100%;
+    position: relative;
+    max-width: 500px;
+    text-align: center;
+    color: #000;
+    background: #fff;
+    padding: 25px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 16px;
+    color: #000;
+    width: 25px;
+    cursor: pointer;
+    height:25px;
+    line-height: 25px;
+    border:1px solid #000;
+}
+/* single user */
+.table-link-go img{
+    width: 20px;
+    height: 20px;
+}
+.content-1200{
+    width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 1200px;
+    background: #ffffff;
+}
+.head-user-single{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.single-user-title{
+    font-size: 20px;
+    color: #232323;
+    margin: 0;
+}
+.user-single-status{
+    font-size: 20px;
+    margin: 0;
+}
+
+/**/
+.error-block{color: red;margin: 10px 0 0 0;}
+.success-send{color: forestgreen; margin: 10px auto; font-size: 22px}
