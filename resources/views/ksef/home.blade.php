@@ -6,7 +6,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" rel="stylesheet"
           type="text/css">
     <link href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
-    <link href="{{URL::to('/assets/css/calls_styles.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{URL::to('/assets/css/ksef_styles.css')}}" rel="stylesheet" type="text/css">
 
     <title>Ksef - пользователи</title>
 </head>

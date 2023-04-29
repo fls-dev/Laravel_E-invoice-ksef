@@ -64,165 +64,109 @@
         crossorigin="anonymous"></script>
 <script>
     document.addEventListener("DOMContentLoaded", (e) => {
-        if (document.getElementById('sendSmsNumber')) {
-            Inputmask({
-                mask: "99999999999",
-                placeholder: "",
-                showMaskOnHover: true,
-                showMaskOnFocus: false
-            }).mask(document.getElementById('sendSmsNumber'));
-        }
-        if (document.getElementById('callPhoneNumber')) {
-            Inputmask({
-                mask: "99999999999",
-                placeholder: "",
-                showMaskOnHover: true,
-                showMaskOnFocus: false
-            }).mask(document.getElementById('callPhoneNumber'));
-        }
-        if (document.getElementById('transferCallNumber')) {
-            Inputmask({
-                mask: "99999999999",
-                placeholder: "",
-                showMaskOnHover: true,
-                showMaskOnFocus: false
-            }).mask(document.getElementById('transferCallNumber'));
-        }
+        // if (document.getElementById('sendSmsNumber')) {
+        //     Inputmask({
+        //         mask: "99999999999",
+        //         placeholder: "",
+        //         showMaskOnHover: true,
+        //         showMaskOnFocus: false
+        //     }).mask(document.getElementById('sendSmsNumber'));
+        // }
+        // if (document.getElementById('callPhoneNumber')) {
+        //     Inputmask({
+        //         mask: "99999999999",
+        //         placeholder: "",
+        //         showMaskOnHover: true,
+        //         showMaskOnFocus: false
+        //     }).mask(document.getElementById('callPhoneNumber'));
+        // }
+        // if (document.getElementById('transferCallNumber')) {
+        //     Inputmask({
+        //         mask: "99999999999",
+        //         placeholder: "",
+        //         showMaskOnHover: true,
+        //         showMaskOnFocus: false
+        //     }).mask(document.getElementById('transferCallNumber'));
+        // }
 
     });
-    document.addEventListener('click', (e) => {
-        console.log(e.target)
-        if (e.target.id === 'goModalCall') {
-            document.getElementById('modalGoCallPhone').classList.remove('none');
-        }
-        if (e.target.id === 'closeModalCallPhone') {
-            document.getElementById('modalGoCallPhone').classList.add('none');
-        }
-        if (e.target.id === 'modalGoCallPhone') {
-            document.getElementById('modalGoCallPhone').classList.add('none');
-        }
-        if (e.target.id === 'goCallPhoneBtn') {
-           goCallPhone()
-        }
-        //
-        if (e.target.id === 'goSmsSend') {
-            document.getElementById('modalSms').classList.remove('none');
-        }
-        if (e.target.id === 'closeModalSms') {
-            document.getElementById('modalSms').classList.add('none');
-        }
-        if (e.target.id === 'modalSms') {
-            document.getElementById('modalSms').classList.add('none');
-        }
-        if (e.target.id === 'sendSmsBtn') {
-            sendSms()
-        }
-    //     transfer
-        if(e.target.classList.contains('transfer-call')){
-            document.getElementById('transferCallNumber').value = e.target.dataset.transfer;
-            document.getElementById('modalGoTransferCall').classList.remove('none');
-        }
-        if(e.target.id === 'closeModalTransferCall'){
-            document.getElementById('modalGoTransferCall').classList.add('none');
-        }
-        if (e.target.id === 'modalGoTransferCall') {
-            document.getElementById('modalGoTransferCall').classList.add('none');
-        }
-
-    })
+    // document.addEventListener('click', (e) => {
+    //     console.log(e.target)
+    //     if (e.target.id === 'goModalCall') {
+    //         document.getElementById('modalGoCallPhone').classList.remove('none');
+    //     }
+    //     if (e.target.id === 'closeModalCallPhone') {
+    //         document.getElementById('modalGoCallPhone').classList.add('none');
+    //     }
+    //     if (e.target.id === 'modalGoCallPhone') {
+    //         document.getElementById('modalGoCallPhone').classList.add('none');
+    //     }
+    //     if (e.target.id === 'goCallPhoneBtn') {
+    //        goCallPhone()
+    //     }
+    //     //
+    //     if (e.target.id === 'goSmsSend') {
+    //         document.getElementById('modalSms').classList.remove('none');
+    //     }
+    //     if (e.target.id === 'closeModalSms') {
+    //         document.getElementById('modalSms').classList.add('none');
+    //     }
+    //     if (e.target.id === 'modalSms') {
+    //         document.getElementById('modalSms').classList.add('none');
+    //     }
+    //     if (e.target.id === 'sendSmsBtn') {
+    //         sendSms()
+    //     }
+    // //     transfer
+    //     if(e.target.classList.contains('transfer-call')){
+    //         document.getElementById('transferCallNumber').value = e.target.dataset.transfer;
+    //         document.getElementById('modalGoTransferCall').classList.remove('none');
+    //     }
+    //     if(e.target.id === 'closeModalTransferCall'){
+    //         document.getElementById('modalGoTransferCall').classList.add('none');
+    //     }
+    //     if (e.target.id === 'modalGoTransferCall') {
+    //         document.getElementById('modalGoTransferCall').classList.add('none');
+    //     }
+    // })
 
     function sendSms() {
-        const number = document.getElementById('sendSmsNumber');
-        const message = document.getElementById('sendSmsMessage');
-        const blockMessageForm = document.getElementById('blockMessageForm');
-        const insertAnswerSms = document.getElementById('insertAnswerSms');
-        console.log(number.value.length);
-        console.log(message.value);
-        if (number.value.length === 11 && message.value !== '') {
+        {{--const number = document.getElementById('sendSmsNumber');--}}
+        {{--const message = document.getElementById('sendSmsMessage');--}}
+        {{--const blockMessageForm = document.getElementById('blockMessageForm');--}}
+        {{--const insertAnswerSms = document.getElementById('insertAnswerSms');--}}
+        {{--console.log(number.value.length);--}}
+        {{--console.log(message.value);--}}
+        {{--if (number.value.length === 11 && message.value !== '') {--}}
 
-            blockMessageForm.innerHTML = '';
-            $.ajax({
-                url: "{{URL::to('/')}}/send-sms",
-                type: "POST",
-                data: {
-                    number: number.value,
-                    message: message.value,
-                    _token: '{{csrf_token()}}',
-                },
-                success: function (res) {
-                    if (res.status === true) {
-                        insertAnswerSms.innerHTML = '<p class="success-send">Сообщение успешно отправлено</p>';
-                        setTimeout(() => location.reload(), 1500);
-                    } else {
-                        blockMessageForm.innerHTML = '<p class="error-block">Ошибка, попробуйте позже..</p>';
-                    }
-                }
-            });
-        } else {
-            blockMessageForm.innerHTML = '<p class="error-block">Не все поля заполнены</p>';
-        }
+        {{--    blockMessageForm.innerHTML = '';--}}
+        {{--    $.ajax({--}}
+        {{--        url: "{{URL::to('/')}}/send-sms",--}}
+        {{--        type: "POST",--}}
+        {{--        data: {--}}
+        {{--            number: number.value,--}}
+        {{--            message: message.value,--}}
+        {{--            _token: '{{csrf_token()}}',--}}
+        {{--        },--}}
+        {{--        success: function (res) {--}}
+        {{--            if (res.status === true) {--}}
+        {{--                insertAnswerSms.innerHTML = '<p class="success-send">Сообщение успешно отправлено</p>';--}}
+        {{--                setTimeout(() => location.reload(), 1500);--}}
+        {{--            } else {--}}
+        {{--                blockMessageForm.innerHTML = '<p class="error-block">Ошибка, попробуйте позже..</p>';--}}
+        {{--            }--}}
+        {{--        }--}}
+        {{--    });--}}
+        {{--} else {--}}
+        {{--    blockMessageForm.innerHTML = '<p class="error-block">Не все поля заполнены</p>';--}}
+        {{--}--}}
     }
 
     function goCallPhone() {
-        const number = document.getElementById('callPhoneNumber');
-        const fromPhone = document.getElementById('callPhoneSelect');
-        const blockMessageForm = document.getElementById('blockMessageFormPhone');
-        const insertAnswerCallPhone = document.getElementById('insertAnswerCallPhone');
-        if (number.value.length === 11) {
 
-            blockMessageForm.innerHTML = '';
-            $.ajax({
-                url: "{{URL::to('/')}}/go-to-call",
-                type: "POST",
-                data: {
-                    number: number.value,
-                    fromPhone: fromPhone.value,
-                    _token: '{{csrf_token()}}',
-                },
-                success: function (res) {
-                    console.log(res)
-                    if (res.status === true) {
-                        insertAnswerCallPhone.innerHTML = '<p class="success-send">Вызов начнется после ответа на телефон!</p>';
-                        setTimeout(() => location.reload(), 1500);
-                    } else {
-                        blockMessageForm.innerHTML = '<p class="error-block">Ошибка, попробуйте позже..</p>';
-                    }
-                }
-            });
-        } else {
-            blockMessageForm.innerHTML = '<p class="error-block">Не все поля заполнены</p>';
-        }
     }
 
     function goTransferCall() {
-        const number = document.getElementById('transferCallNumber');
-        const fromPhone = document.getElementById('transferCallSelect');
-        const blockMessageForm = document.getElementById('blockMessageTransferCall');
-        const insertTransferCall = document.getElementById('insertTransferCall');
-        $.ajax({
-            url: "{{URL::to('/')}}/transfer-call",
-            type: "POST",
-            data: {
-                number: number.value,
-                fromPhone: fromPhone.value,
-                _token: '{{csrf_token()}}',
-            },
-            success: function (res) {
-                console.log(res)
-                // if (res.status === true) {
-                //     insertTransferCall.innerHTML = '<p class="success-send">Вызов начнется после ответа на телефон!</p>';
-                //     setTimeout(() => location.reload(), 1500);
-                // } else {
-                //     blockMessageForm.innerHTML = '<p class="error-block">Ошибка, попробуйте позже..</p>';
-                // }
-            }
-        });
-        // if (number.value.length === 11) {
-        //
-        //     blockMessageForm.innerHTML = '';
-        //
-        // } else {
-        //     blockMessageForm.innerHTML = '<p class="error-block">Не все поля заполнены</p>';
-        // }
+
     }
 </script>

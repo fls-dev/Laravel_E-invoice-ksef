@@ -53,6 +53,7 @@ table, th, td {
     display: flex;
     gap: 20px;
     width: 100%;
+    justify-content: center;
 }
 
 .left-header-menu a.active {
@@ -131,7 +132,7 @@ table, th, td {
 }
 .content-1200{
     width: 100%;
-    padding: 15px;
+    padding: 30px 15px;
     margin: 0 auto;
     max-width: 1200px;
     background: #ffffff;
@@ -140,6 +141,15 @@ table, th, td {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.invoices-user-section h2{
+    margin-bottom: 30px;
+}
+.gray-line{
+    width: 100%;
+    height: 2px;
+    margin: 30px auto;
+    background: #a0aec0;
 }
 .single-user-title{
     font-size: 20px;
@@ -150,11 +160,26 @@ table, th, td {
     font-size: 20px;
     margin: 0;
 }
+.user-single-status img {
+    width: 25px;
+    cursor: pointer;
+}
 .active{
     color: green;
 }
 .no-active{
     color: red;
+}
+
+.selected-tab{
+    display: flex;justify-content: space-between;align-items: center; gap: 15px;
+}
+.selected-tab label{
+    border: 1px solid gray;width: 100%;text-align: center;padding: 10px;font-size: 14px;
+    cursor: pointer;
+}
+.is-no-active{
+
 }
 /**/
 .error-block{color: red;margin: 10px 0 0 0;}
