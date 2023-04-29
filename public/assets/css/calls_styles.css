@@ -150,7 +150,12 @@ table, th, td {
     font-size: 20px;
     margin: 0;
 }
-
+.active{
+    color: green;
+}
+.no-active{
+    color: red;
+}
 /**/
 .error-block{color: red;margin: 10px 0 0 0;}
 .success-send{color: forestgreen; margin: 10px auto; font-size: 22px}

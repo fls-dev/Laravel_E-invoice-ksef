@@ -1,4 +1,5 @@
 <section class="footer">
+{{--    <div class="">FOOTER</div>--}}
     <div id="modalSms" class="modal none">
         <div class="modal-content" id="insertAnswerSms">
             <div class="close-modal" id="closeModalSms">X</div>

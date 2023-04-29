@@ -25,14 +25,51 @@ class ksefIntegrationController extends Controller
    }
     public function userPage()
    {
+       try {
        $id = request('id');
-       $user = $users = DB::table('users')->where('id', $id)->first();
+       $user = DB::table('users')->where('id', $id)->first();
        if($user) {
            $name = $user->name;
-           return view('ksef.get_info_user', compact('user', 'name'));
+           $session = DB::table('kser_active_sessions')->where('user_id', $id)->first();
+           $status = false;
+           if($session){
+              $t = $this->SessionStatus($session->sessionToken);
+              dd($t);
+               $status = true;
+           }
+           session(['user'=> $user]);
+           return view('ksef.get_info_user', compact('user', 'name', 'status'));
+
        }else{
            return redirect()->route('home');
        }
+       }catch (Exception $e) {
+           return false;
+       }
+   }
+
+    public function SessionStatus($token)
+    {
+        $curl = curl_init();
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => 'https://ksef-test.mf.gov.pl/api//online/Session/Status?PageSize=10&PageOffset=0&IncludeDetails=true',
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => '',
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 0,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => 'GET',
+            CURLOPT_HTTPHEADER => array(
+                'SessionToken: '.$token
+            ),
+        ));
+
+        $response = curl_exec($curl);
+
+        curl_close($curl);
+//        echo $response;
+        dd(json_decode($response));
    }
 
 
@@ -87,12 +124,23 @@ class ksefIntegrationController extends Controller
         try {
             $authChallenge = $this->AuthorisationChallenge();
             if($authChallenge){
-                $xml = new SimpleXMLElement('<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                $tokenAdmin = '26A9E1BD9FF30E87A62BAEB377B49D40C248D0D0255ABDCDA3D8D4BD7B39A6C7';
+                $timestamp = strtotime("2023-04-27T07:26:47.317Z") * 1000;
+                $string = sprintf("%s|%s", $tokenAdmin, $timestamp);
+
+                $public_key = file_get_contents('files/publicKey.pem');
+                openssl_public_encrypt($string, $encrypted, $public_key);
+
+                $token = base64_encode($encrypted);
+
+                dd($token);
+
+                $str = sprintf('<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <ns3:InitSessionTokenRequest xmlns:ns3="http://ksef.mf.gov.pl/schema/gtw/svc/online/auth/request/2021/10/01/0001" xmlns="http://ksef.mf.gov.pl/schema/gtw/svc/online/types/2021/10/01/0001" xmlns:ns2="http://ksef.mf.gov.pl/schema/gtw/svc/types/2021/10/01/0001">
 <ns3:Context>
-	<Challenge>'.$authChallenge->challenge.'</Challenge>
+	<Challenge>%s</Challenge>
 	<Identifier xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:SubjectIdentifierByCompanyType">
-		<ns2:Identifier>9999999999</ns2:Identifier>
+		<ns2:Identifier>%s</ns2:Identifier>
 	</Identifier>
 	<DocumentType>
 		<ns2:Service>KSeF</ns2:Service>
@@ -105,11 +153,9 @@ class ksefIntegrationController extends Controller
 	</DocumentType>
 	<Token>LUi973EA7RCInbrryrj8DcE9N0uR8ynylbTfZ8c8pS/ZDl/+HpJb8Ej/zMwapXFMol50KDADFKRjQ+51LiWaEhL9cHeNKem3xazdEen3wC9lID27YiL45O3AykqOLmdmRMAA14Rq/wB1Hxq3aDCk8dXN2Uolzj+xsjtpw6pGKXLxBnHd+uwuZLrtVWb1bHZnB/K84ZKSF4DRYQBiJ8DDno7ElNdqac+er4+rnAjFm0FHOWw5TSc0nfdY//7kZr7mQRPs9AvrH2Da6V7XmMTyq030XoYoltK4e0PshFlXQsFOIZJWMu38uYkKwE+6AlydLBBVVk+EyMSqXNzgLZJUHg==</Token>
 </ns3:Context>
-</ns3:InitSessionTokenRequest>');
-
-
+</ns3:InitSessionTokenRequest>', $authChallenge->challenge, '1122334455');
+                $xml = new SimpleXMLElement($str);
                 $xmlString = $xml->asXML();
-
                 dd($xml, $xmlString);
             }
         }catch (\Exception $e){

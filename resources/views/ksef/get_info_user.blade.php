@@ -17,18 +17,16 @@
     <div class="content-1200">
     <div class="head-user-single">
         <p class="single-user-title">Страница пользователя, {{$name}}</p>
-        <p class="user-single-status">Status: <span class="active">Active</span></p>
+        <p class="user-single-status">Status: @if($status)<span class="active">Active</span @else <span class="no-active">No Active</span @endif></p>
     </div>
     </div>
+    @php
+        $user = session('user');
+//        dd($user);
+    @endphp
 </div>
 @include('template.footer')
 <script>
-    const table = $('#users').DataTable({
-        order: [[0, "desc"]],
-        processing: true,
-        "iDisplayLength": 10,
-    });
-
 
 </script>
 </body>
