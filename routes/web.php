@@ -17,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [ksefIntegrationController::class, 'showPageUsers'])->name('home');
 Route::get('/user/{id}', [ksefIntegrationController::class, 'userPage']);
 Route::get('/user-init-token', [ksefIntegrationController::class, 'InitToken']);
+Route::post('/sync-invoices', [ksefIntegrationController::class, 'InvoiceSyncFilter']);
