@@ -20,6 +20,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 Route::group(['prefix' => 'ksef'], function() {
     Route::get('/save-main-token', [ksefIntegrationController::class, 'saveMainToken']);
-    Route::get('/test', [ksefIntegrationController::class, 'AuthorisationChallenge']);
+    Route::get('/test', [ksefIntegrationController::class, 'sendInvoice']);
     Route::get('/test2', [ksefIntegrationController::class, 'InitToken']);
 });

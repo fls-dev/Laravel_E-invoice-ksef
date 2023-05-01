@@ -8,7 +8,6 @@
 //       array('url'=>'/active-calls', 'name'=>'page 4')
     );
 @endphp
-
 <div class="header-menu">
     <div class="header-max">
         <div class="left-header-menu">

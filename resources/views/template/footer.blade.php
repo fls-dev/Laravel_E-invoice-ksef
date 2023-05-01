@@ -63,7 +63,7 @@
         integrity="sha512-efAcjYoYT0sXxQRtxGY37CKYmqsFVOIwMApaEbrxJr4RwqVVGw8o+Lfh/+59TU07+suZn1BWq4fDl5fdgyCNkw=="
         crossorigin="anonymous"></script>
 <script>
-    document.addEventListener("DOMContentLoaded", (e) => {
+    // document.addEventListener("DOMContentLoaded", (e) => {
         // if (document.getElementById('sendSmsNumber')) {
         //     Inputmask({
         //         mask: "99999999999",
@@ -89,7 +89,7 @@
         //     }).mask(document.getElementById('transferCallNumber'));
         // }
 
-    });
+    // });
     // document.addEventListener('click', (e) => {
     //     console.log(e.target)
     //     if (e.target.id === 'goModalCall') {

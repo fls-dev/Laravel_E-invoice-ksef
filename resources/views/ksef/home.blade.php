@@ -7,7 +7,6 @@
           type="text/css">
     <link href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
     <link href="{{URL::to('/assets/css/ksef_styles.css')}}" rel="stylesheet" type="text/css">
-
     <title>Ksef - пользователи</title>
 </head>
 <body>

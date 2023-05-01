@@ -8,184 +8,7 @@ use mysql_xdevapi\Exception;
 
 class ksefIntegrationController extends Controller
 {
-//    https://ksef-test.mf.gov.pl/web/api/invoice/query?
-//    {
-//    "results": [
-//        {
-//            "invoiceReferenceNumber": "FK2022/04/24_ PODMIOT_2K",
-//            "ksefReferenceNumber": "9999999999-20230428-693D47-0AED73-37",
-//            "invoicingDate": "2023-04-28T00:00:00",
-//            "acquisitionTimestamp": "2023-04-28T09:05:43.174Z",
-//            "net": "0.00",
-//            "vat": "0.00",
-//            "gross": "0.00",
-//            "currency": "PLN",
-//            "contractorName": "CDE Sp.z o.o.",
-//            "contractorIdentifier": "1111111111",
-//            "contractorIdentifierType": "onip",
-//            "buyer": {
-//                "name": "CDE Sp.z o.o.",
-//                "identifier": "1111111111",
-//                "identifierType": "onip"
-//            }
-//        },
-//        {
-//            "invoiceReferenceNumber": "12/04/2023",
-//            "ksefReferenceNumber": "9999999999-20230427-6B310D-EF1AC9-44",
-//            "invoicingDate": "2023-04-27T00:00:00",
-//            "acquisitionTimestamp": "2023-04-27T10:59:40.729Z",
-//            "net": "-3000.00",
-//            "vat": "-690.00",
-//            "gross": "-3690.00",
-//            "currency": "PLN",
-//            "contractorName": "jhlhklhkkj",
-//            "contractorIdentifier": "1111111111",
-//            "contractorIdentifierType": "onip",
-//            "buyer": {
-//                "name": "jhlhklhkkj",
-//                "identifier": "1111111111",
-//                "identifierType": "onip"
-//            }
-//        },
-//        {
-//            "invoiceReferenceNumber": "FVTest/0001",
-//            "ksefReferenceNumber": "9999999999-20230427-90E256-6DF1E0-21",
-//            "invoicingDate": "2023-04-27T00:00:00",
-//            "acquisitionTimestamp": "2023-04-27T10:52:33.312Z",
-//            "net": "100.00",
-//            "vat": "23.00",
-//            "gross": "123.00",
-//            "currency": "PLN",
-//            "contractorName": "Bo tak ma byc",
-//            "contractorIdentifier": "4870679868",
-//            "contractorIdentifierType": "onip",
-//            "buyer": {
-//                "name": "Bo tak ma byc",
-//                "identifier": "4870679868",
-//                "identifierType": "onip"
-//            }
-//        },
-//        {
-//            "invoiceReferenceNumber": "11/04/2023",
-//            "ksefReferenceNumber": "9999999999-20230427-4025C6-3B32EF-44",
-//            "invoicingDate": "2023-04-27T00:00:00",
-//            "acquisitionTimestamp": "2023-04-27T10:46:48.473Z",
-//            "net": "104065.04",
-//            "vat": "23934.96",
-//            "gross": "128000.00",
-//            "currency": "PLN",
-//            "contractorName": "hjgjgj",
-//            "contractorIdentifier": "1111111111",
-//            "contractorIdentifierType": "onip",
-//            "buyer": {
-//                "name": "hjgjgj",
-//                "identifier": "1111111111",
-//                "identifierType": "onip"
-//            }
-//        },
-//        {
-//            "invoiceReferenceNumber": "10/04/2023",
-//            "ksefReferenceNumber": "9999999999-20230427-F4E795-50807D-8C",
-//            "invoicingDate": "2023-04-27T00:00:00",
-//            "acquisitionTimestamp": "2023-04-27T10:41:18.153Z",
-//            "net": "8130.08",
-//            "vat": "1869.92",
-//            "gross": "10000.00",
-//            "currency": "PLN",
-//            "contractorName": "m,nfdm,gn,.dmh,.",
-//            "contractorIdentifier": "1111111111",
-//            "contractorIdentifierType": "onip",
-//            "buyer": {
-//                "name": "m,nfdm,gn,.dmh,.",
-//                "identifier": "1111111111",
-//                "identifierType": "onip"
-//            }
-//        },
-//        {
-//            "invoiceReferenceNumber": "1169999",
-//            "ksefReferenceNumber": "9999999999-20230427-3C1E82-0588B1-F3",
-//            "invoicingDate": "2023-04-27T00:00:00",
-//            "acquisitionTimestamp": "2023-04-27T10:03:40.385Z",
-//            "net": "1656.00",
-//            "vat": "380.88",
-//            "gross": "2036.88",
-//            "currency": "PLN",
-//            "contractorName": "RAZ SP ZO.O.",
-//            "contractorIdentifier": "7777777777",
-//            "contractorIdentifierType": "onip",
-//            "buyer": {
-//                "name": "RAZ SP ZO.O.",
-//                "identifier": "7777777777",
-//                "identifierType": "onip"
-//            }
-//        },
-//        {
-//            "invoiceReferenceNumber": "KOR/2023/04/27/1",
-//            "ksefReferenceNumber": "9999999999-20230427-BA4FD2-F78BA9-01",
-//            "invoicingDate": "2023-04-27T00:00:00",
-//            "acquisitionTimestamp": "2023-04-27T08:44:38.256Z",
-//            "net": "-162.60",
-//            "vat": "-37.40",
-//            "gross": "-200.00",
-//            "currency": "PLN",
-//            "contractorName": "Selfbiller Sp. z o.o.",
-//            "contractorIdentifier": "1234563218",
-//            "contractorIdentifierType": "onip",
-//            "buyer": {
-//                "name": "Selfbiller Sp. z o.o.",
-//                "identifier": "1234563218",
-//                "identifierType": "onip"
-//            }
-//        },
-//        {
-//            "invoiceReferenceNumber": "2023/04/27/1",
-//            "ksefReferenceNumber": "1234563218-20230427-3A23FF-1D2E40-AB",
-//            "invoicingDate": "2023-04-27T00:00:00",
-//            "acquisitionTimestamp": "2023-04-27T08:40:50.343Z",
-//            "net": "1667.61",
-//            "vat": "383.38",
-//            "gross": "2051.00",
-//            "currency": "PLN",
-//            "contractorName": "Selfbiller Sp. z o.o.",
-//            "contractorIdentifier": "1234563218",
-//            "contractorIdentifierType": "onip",
-//            "buyer": {
-//                "name": "Selfbiller Sp. z o.o.",
-//                "identifier": "1234563218",
-//                "identifierType": "onip"
-//            }
-//        },
-//        {
-//            "invoiceReferenceNumber": "FK2022/03/200",
-//            "ksefReferenceNumber": "9999999999-20230426-2D0093-F54A24-53",
-//            "invoicingDate": "2023-04-26T00:00:00",
-//            "acquisitionTimestamp": "2023-04-26T12:58:40.439Z",
-//            "net": "-162.60",
-//            "vat": "-37.40",
-//            "gross": "-200.00",
-//            "currency": "PLN",
-//            "contractorName": "Jan Kowalski",
-//            "buyer": {
-//                "name": "Jan Kowalski"
-//            }
-//        },
-//        {
-//            "invoiceReferenceNumber": "FV2022/02/150/111111",
-//            "ksefReferenceNumber": "9999999999-20230426-45B4AD-50F407-E1",
-//            "invoicingDate": "2023-04-26T00:00:00",
-//            "acquisitionTimestamp": "2023-04-26T06:56:44.682Z",
-//            "net": "1667.61",
-//            "vat": "383.38",
-//            "gross": "2051.00",
-//            "currency": "PLN",
-//            "contractorName": "Jan Kowalski",
-//            "buyer": {
-//                "name": "Jan Kowalski"
-//            }
-//        }
-//    ],
-//    "count": 124
-//}
+
 
     public function saveMainToken()
 //        Написать сохранение пользовательского токена потом из модалки
@@ -215,39 +38,13 @@ class ksefIntegrationController extends Controller
                     $status = $this->SessionStatus($session->sessionToken);
                 }
                 session(['user' => $user]);
-                return view('ksef.get_info_user', compact('user', 'name', 'status'));
+                $invoices = $this->InvoiceSync();
+                return view('ksef.get_info_user', compact('user', 'name', 'status', 'invoices'));
             } else {
                 return redirect()->route('home');
             }
         } catch (Exception $e) {
             return $e;
-        }
-    }
-
-    public function SessionStatus($token): bool
-    {
-        $curl = curl_init();
-        curl_setopt_array($curl, array(
-            CURLOPT_URL => 'https://ksef-test.mf.gov.pl/api/online/Session/Status?PageSize=10&PageOffset=0&IncludeDetails=true',
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_ENCODING => '',
-            CURLOPT_MAXREDIRS => 10,
-            CURLOPT_TIMEOUT => 0,
-            CURLOPT_FOLLOWLOCATION => true,
-            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-            CURLOPT_CUSTOMREQUEST => 'GET',
-            CURLOPT_HTTPHEADER => array(
-                'SessionToken: ' . $token
-            ),
-        ));
-        $response = curl_exec($curl);
-        curl_close($curl);
-        $response = json_decode($response);
-
-        if (isset($response->timestamp)) {
-            return true;
-        } else {
-            return false;
         }
     }
 
@@ -290,6 +87,32 @@ class ksefIntegrationController extends Controller
         }
     }
 
+    public function SessionStatus($token): bool
+    {
+        $curl = curl_init();
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => 'https://ksef-test.mf.gov.pl/api/online/Session/Status?PageSize=10&PageOffset=0&IncludeDetails=true',
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => '',
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 0,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => 'GET',
+            CURLOPT_HTTPHEADER => array(
+                'SessionToken: ' . $token
+            ),
+        ));
+        $response = curl_exec($curl);
+        curl_close($curl);
+        $response = json_decode($response);
+
+        if (isset($response->timestamp)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
     public function InitToken()
     {
@@ -357,5 +180,61 @@ class ksefIntegrationController extends Controller
         }
     }
 
+    public function InvoiceSync()
+    {
+//        $data = array(
+//            'queryCriteria'=>array(
+//                'type'=>'range',
+//                'subjectType'=>'subject1',
+//                'invoicingDateFrom'=>'2022-05-01T00:00:00',
+//                'invoicingDateTo'=>'2023-04-27T10:19:07'
+//            )
+//        );
+//        $curl = curl_init();
+//        curl_setopt_array($curl, array(
+//            CURLOPT_URL => 'https://ksef-test.mf.gov.pl/api//online/Query/Invoice/Sync?PageSize=10&PageOffset=1',
+//            CURLOPT_RETURNTRANSFER => true,
+//            CURLOPT_ENCODING => '',
+//            CURLOPT_MAXREDIRS => 10,
+//            CURLOPT_TIMEOUT => 0,
+//            CURLOPT_FOLLOWLOCATION => true,
+//            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+//            CURLOPT_CUSTOMREQUEST => 'POST',
+//            CURLOPT_POSTFIELDS =>json_encode($data),
+//            CURLOPT_HTTPHEADER => array(
+//                'SessionToken: d1c1d51c22673fb04e4e9a7cbd01bb99df704693c7112435f70b0b44583a8543',
+//                'Content-Type: application/json'
+//            ),
+//        ));
+//        $invoices = curl_exec($curl);
+//        curl_close($curl);
+//        dd(json_decode($invoices));
+        $invoices = '{"timestamp":"2023-04-30T08:49:20.436Z","referenceNumber":"20230430-SE-6BA071310D-EDB61DF159-37","numberOfElements":2143,"pageSize":10,"pageOffset":1,"invoiceHeaderList":[{"invoiceReferenceNumber":"1/1/2024","ksefReferenceNumber":"9999999999-20230425-D21F31-4C9B86-F6","invoiceHash":{"hashSHA":{"algorithm":"SHA-256","encoding":"Base64","value":"vkmNEcUaQXBDUpodnTG3xZQ6QLef6GQpPqQwmtYaBuM="},"fileSize":1793},"invoicingDate":"2023-04-25","acquisitionTimestamp":"2023-04-25T13:22:14.811Z","subjectBy":{"issuedByIdentifier":{"type":"onip","identifier":"9999999999"},"issuedByName":{"type":"fn","tradeName":null,"fullName":"abc"}},"subjectTo":{"issuedToIdentifier":{"type":"onip","identifier":"1111111111"},"issuedToName":{"type":"fn","tradeName":null,"fullName":"xyz"}},"net":"1000.00","vat":"230.00","gross":"1230.00","currency":"PLN"},{"invoiceReferenceNumber":"1798","ksefReferenceNumber":"9999999999-20230425-1E1731-DFE019-1F","invoiceHash":{"hashSHA":{"algorithm":"SHA-256","encoding":"Base64","value":"4paRs1omNLGo6eY/ZwjEdCO1oEcDTzfRZhM4u3J7G4g="},"fileSize":1881},"invoicingDate":"2023-04-25","acquisitionTimestamp":"2023-04-25T12:44:54.027Z","subjectBy":{"issuedByIdentifier":{"type":"onip","identifier":"9999999999"},"issuedByName":{"type":"fn","tradeName":null,"fullName":"ABC"}},"subjectTo":{"issuedToIdentifier":{"type":"onip","identifier":"1111111111"},"issuedToName":{"type":"fn","tradeName":null,"fullName":"ABC"}},"net":"383.10","vat":"84.28","gross":"467.38","currency":"PLN"},{"invoiceReferenceNumber":"125/mgj/2023","ksefReferenceNumber":"9999999999-20230425-2DC616-D69944-E7","invoiceHash":{"hashSHA":{"algorithm":"SHA-256","encoding":"Base64","value":"R0zHy8mbZeeJxpyYc9dNR2SmVIelsLM8cKUysCp6yQ0="},"fileSize":1718},"invoicingDate":"2023-04-25","acquisitionTimestamp":"2023-04-25T11:43:13.483Z","subjectBy":{"issuedByIdentifier":{"type":"onip","identifier":"9999999999"},"issuedByName":{"type":"pn","tradeName":null,"firstName":"Helena","surname":"Helena"}},"subjectTo":{"issuedToIdentifier":{"type":"onip","identifier":"4444444444"},"issuedToName":{"type":"pn","tradeName":null,"firstName":"hhhhhhhhh","surname":"hhhhhhhhhhhhhhhhh"}},"net":"12195.12","vat":"2804.88","gross":"15000.00","currency":"PLN"},{"invoiceReferenceNumber":"FA/125/2023","ksefReferenceNumber":"9999999999-20230425-96E681-7A75D0-DF","invoiceHash":{"hashSHA":{"algorithm":"SHA-256","encoding":"Base64","value":"Jfr8v4zqpwQQgMvCzdWIWCIJDG+SdUKdOZu8WdSFB4w="},"fileSize":2461},"invoicingDate":"2023-04-25","acquisitionTimestamp":"2023-04-25T07:32:01.836Z","subjectBy":{"issuedByIdentifier":{"type":"onip","identifier":"9999999999"},"issuedByName":{"type":"fn","tradeName":"MEDIALAB","fullName":"MEDIA LAB s.c. Bożena Rożenek, Zbigniew Rożenek"}},"subjectTo":{"issuedToIdentifier":{"type":"onip","identifier":"7291946279"},"issuedToName":{"type":"fn","tradeName":"MEDIALAB_DE","fullName":"MEDIALAB Deutschland GmbH"}},"net":"3650.00","vat":"0.00","gross":"3650.00","currency":"PLN"},{"invoiceReferenceNumber":"FV2022/02/150","ksefReferenceNumber":"9999999999-20230425-08927A-FFCF8F-3E","invoiceHash":{"hashSHA":{"algorithm":"SHA-256","encoding":"Base64","value":"tQ8NvWTwO6USR3Nsr8T6a6dbaty/ztiNQhFME2ScqqE="},"fileSize":3645},"invoicingDate":"2023-04-25","acquisitionTimestamp":"2023-04-25T06:58:55.604Z","subjectBy":{"issuedByIdentifier":{"type":"onip","identifier":"9999999999"},"issuedByName":{"type":"fn","tradeName":null,"fullName":"ABC AGD sp. z o. o."}},"subjectTo":{"issuedToIdentifier":{"type":"none"},"issuedToName":{"type":"pn","tradeName":null,"firstName":"Jan","surname":"Kowalski"}},"net":"1667.61","vat":"383.38","gross":"2051.00","currency":"PLN"},{"invoiceReferenceNumber":"1\\23","ksefReferenceNumber":"9999999999-20230424-A69AD2-CACE69-29","invoiceHash":{"hashSHA":{"algorithm":"SHA-256","encoding":"Base64","value":"X1BDKGq3Trvogn7shYvlOaFpTK0ie8W3ozSb1MEOOm8="},"fileSize":2417},"invoicingDate":"2023-04-24","acquisitionTimestamp":"2023-04-24T16:18:47.346Z","subjectBy":{"issuedByIdentifier":{"type":"onip","identifier":"9999999999"},"issuedByName":{"type":"pn","tradeName":null,"firstName":"Monika","surname":"tt"}},"subjectTo":{"issuedToIdentifier":{"type":"onip","identifier":"7777777777"},"issuedToName":{"type":"pn","tradeName":null,"firstName":"Monika","surname":"uuu"}},"net":"1000.00","vat":"0.00","gross":"1000.00","currency":"EUR"},{"invoiceReferenceNumber":"1\\2023","ksefReferenceNumber":"9999999999-20230424-7AEF77-404E48-36","invoiceHash":{"hashSHA":{"algorithm":"SHA-256","encoding":"Base64","value":"wcysRcbtz4YfHycEe+QhtNVYSX7ibfSrEN78WiUp0Ek="},"fileSize":1995},"invoicingDate":"2023-04-24","acquisitionTimestamp":"2023-04-24T15:12:57.341Z","subjectBy":{"issuedByIdentifier":{"type":"onip","identifier":"9999999999"},"issuedByName":{"type":"pn","tradeName":null,"firstName":"Monika","surname":"Kot"}},"subjectTo":{"issuedToIdentifier":{"type":"onip","identifier":"1112223332"},"issuedToName":{"type":"pn","tradeName":null,"firstName":"ttt","surname":"bbb"}},"net":"0.00","vat":"0.00","gross":"18000.00","currency":"PLN"},{"invoiceReferenceNumber":"FK/04/0001","ksefReferenceNumber":"9999999999-20230424-3FC294-9B6333-64","invoiceHash":{"hashSHA":{"algorithm":"SHA-256","encoding":"Base64","value":"VR7kb9bPmtZWohshgjA+CRtWDoN4VGnurez9G3rLY/4="},"fileSize":2373},"invoicingDate":"2023-04-24","acquisitionTimestamp":"2023-04-24T14:51:45.776Z","subjectBy":{"issuedByIdentifier":{"type":"onip","identifier":"9999999999"},"issuedByName":{"type":"fn","tradeName":null,"fullName":"Tulipan"}},"subjectTo":{"issuedToIdentifier":{"type":"onip","identifier":"3567424510"},"issuedToName":{"type":"fn","tradeName":null,"fullName":"Testowa"}},"net":"-350.00","vat":"-65.50","gross":"-415.50","currency":"PLN"},{"invoiceReferenceNumber":"test 24/04 fdsfdsfsfds","ksefReferenceNumber":"9999999999-20230424-4D2315-3BA83D-73","invoiceHash":{"hashSHA":{"algorithm":"SHA-256","encoding":"Base64","value":"EK52KNczvNPxIFpVwHSN14s3tOEDiXSSfxmLDXU8mrI="},"fileSize":1558},"invoicingDate":"2023-04-24","acquisitionTimestamp":"2023-04-24T14:36:53.587Z","subjectBy":{"issuedByIdentifier":{"type":"onip","identifier":"9999999999"},"issuedByName":{"type":"fn","tradeName":null,"fullName":"test"}},"subjectTo":{"issuedToIdentifier":{"type":"onip","identifier":"6750002236"},"issuedToName":{"type":"fn","tradeName":null,"fullName":"uj"}},"net":"2000.00","vat":"0.00","gross":"2000.00","currency":"PLN"},{"invoiceReferenceNumber":"test 24/04/2023","ksefReferenceNumber":"9999999999-20230424-872670-6AA15B-BD","invoiceHash":{"hashSHA":{"algorithm":"SHA-256","encoding":"Base64","value":"eS/oRmwuIAPAOJK9oWpV7oGZSnKrh1SFSqgqR2mVpZ8="},"fileSize":1553},"invoicingDate":"2023-04-24","acquisitionTimestamp":"2023-04-24T14:33:20.254Z","subjectBy":{"issuedByIdentifier":{"type":"onip","identifier":"9999999999"},"issuedByName":{"type":"fn","tradeName":null,"fullName":"test"}},"subjectTo":{"issuedToIdentifier":{"type":"onip","identifier":"6750001946"},"issuedToName":{"type":"fn","tradeName":null,"fullName":"uj"}},"net":"10000.00","vat":"0.00","gross":"10000.00","currency":"PLN"}]} ';
+        return json_decode(stripslashes($invoices))->invoiceHeaderList;
+    }
+
+    public function sendInvoice(){
+        $invoice = file_get_contents('files/example.xml');
+//        $invoice = file_get_contents('files/example.xml');
+//        $invoiceBytes = unpack('C*', $invoice);
+//        $size = count($invoiceBytes);
+//
+//        $digest = hash('sha256', $invoice, true);
+//        $digestBase64 = base64_encode($digest);
+//        $contentBase64 = base64_encode($invoice);
+//
+//        dd($digest, mb_strlen($digest));
+//
+//        dd($size, $digestBase64, $contentBase64);
+
+        $bytes = unpack('C*', $invoice);
+
+        $size = count($bytes);
+        $shaBase64 = base64_encode(hash('sha256', $invoice, True));
+
+        $invoice = base64_encode($invoice);
+
+        dd($size, $shaBase64, $invoice);
+    }
 
 }
