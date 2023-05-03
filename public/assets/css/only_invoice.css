@@ -1,0 +1,353 @@
+.invoice-box table {
+    border-collapse: collapse;
+}
+
+.invoice-box tr,.invoice-box td,.invoice-box th,.invoice-box thead,.invoice-box tfoot,.invoice-box td div {
+    page-break-inside: avoid;
+}
+
+.invoice-box thead {
+    display: table-header-group;
+}
+
+.invoice-box tfoot {
+    display: table-row-group;
+}
+
+.invoice-box tr {
+    page-break-inside: avoid;
+}
+
+.invoice-box {
+    font-size: 30px;
+}
+
+.invoice-box .keep-together {
+    page-break-inside: avoid;
+}
+
+.invoice-box .break-before {
+    page-break-before: always;
+}
+
+.invoice-box .break-after {
+    page-break-after: always;
+}
+
+.invoice-box .to-right {
+    float: right;
+}
+
+.invoice-box .to-right--with-margin {
+    margin-left: .5rem;
+    width: 100%;
+}
+
+.invoice-box .to-left {
+    float: left;
+}
+
+.invoice-box .to-left--with-margin {
+    margin-right: .5rem;
+    width: 100%;
+}
+
+.invoice-box .main-header {
+    width: 100%;
+}
+
+.invoice-box .ksef-title {
+    font-family: "Montserrat";
+    font-weight: 600;
+    line-height: 21px;
+    font-size: 1rem;
+    color: #343a40;
+}
+
+.invoice-box  .ksef-title-wrapper {
+    width: 50%;
+    float: left;
+}
+
+.invoice-box  .ksef-title--bold {
+    font-weight: 700;
+}
+
+.invoice-box  .ksef-title--red {
+    color: #dc0032;
+}
+
+.invoice-box  .header-info {
+    float: right;
+    width: 100%;
+}
+
+.invoice-box  .header-info-wrapper {
+    width: 50%;
+    float: right;
+}
+
+.header-info .label-data-info {
+    color: #343a40;
+    display: block;
+    text-align: right;
+    float: left;
+    width: 100%;
+}
+
+.invoice-box .header-info .label-data-info--value {
+    font-weight: 400;
+    font-size: .625rem;
+    line-height: 18px;
+}
+
+.invoice-box .header-info .label-data-info--value2 {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 1.33rem;
+    line-height: 35px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    white-space: normal;
+}
+
+.invoice-box .header-info .label-data-info--name {
+    font-weight: 600;
+    font-size: .625rem;
+    margin-right: .1rem;
+}
+
+.invoice-box .header-title {
+    float: left;
+    width: 100%;
+}
+
+.invoice-box .header-title--label {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 24px;
+    margin-bottom: .9rem;
+    margin-top: .9rem;
+    display: block;
+}
+
+.invoice-box .section-data {
+    width: 100%;
+    float: left;
+    page-break-inside: avoid;
+}
+
+.invoice-box .section-data--margin-top {
+    margin-top: .5rem;
+}
+
+.invoice-box .section-data__header {
+    width: 100%;
+    display: block;
+}
+
+.invoice-box .section-data__header--h1 {
+    font-weight: 700;
+    font-size: .75rem;
+    line-height: 15px;
+    margin: .5rem 0;
+    float: left;
+}
+
+.invoice-box .section-data__header--table {
+    font-weight: 600;
+    font-size: .562rem;
+    margin: .5rem 0;
+}
+
+.invoice-box .section-data__wrapper-left {
+    width: 50%;
+    float: left;
+    padding-right: .5rem;
+    box-sizing: border-box;
+}
+
+.invoice-box .section-data__wrapper-right {
+    width: 50%;
+    float: right;
+    padding-right: .5rem;
+    box-sizing: border-box;
+}
+
+.invoice-box .section-data .label-data-info {
+    color: #343a40;
+    display: block;
+    text-align: left;
+    line-height: 16px;
+}
+
+.invoice-box .section-data .label-data-info--inline {
+    display: inline;
+}
+
+.invoice-box .section-data .label-data-info--header {
+    font-weight: 700;
+    font-size: .562rem;
+    line-height: 16px;
+}
+
+.invoice-box .section-data .label-data-info--single {
+    font-weight: 400;
+    font-size: .625rem;
+    line-height: 18px;
+}
+
+.invoice-box .section-data .label-data-info--half {
+    width: 50%;
+    float: left;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.invoice-box .section-data .label-data-info--half:nth-child(even) {
+    float: right;
+}
+
+.invoice-box .section-data .label-data-info--right {
+    margin-top: .5rem;
+    float: right;
+}
+
+.invoice-box .section-data .label-data-info--vertical-space {
+    margin-top: .6rem;
+    margin-bottom: .1rem;
+}
+
+.invoice-box .section-data .label-data-info--bottom-space {
+    margin-bottom: .1rem;
+}
+
+.section-data .label-data-info--name {
+    font-weight: 600;
+    font-size: .562rem;
+    margin-right: .1rem;
+}
+
+.invoice-box .section-data .label-data-info--name2 {
+    font-weight: 700;
+    font-size: .75rem;
+    margin-right: .1rem;
+}
+
+.invoice-box .section-data .label-data-info--value {
+    font-weight: 400;
+    font-size: .562rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    white-space: normal;
+}
+
+.invoice-box .section-data .label-data-info--value2 {
+    font-weight: 400;
+    font-size: .75rem;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    white-space: normal;
+}
+
+.invoice-box .section-data .label-data-info--italic {
+    font-weight: 400;
+    font-size: .562rem;
+    font-style: italic;
+}
+
+.invoice-box .line-basic {
+    width: 100%;
+    margin-top: .9rem;
+    margin-bottom: .5rem;
+    float: left;
+    border: none;
+    height: 1px;
+    background-color: #bababa;
+}
+
+.invoice-box .table-basic {
+    margin-top: .5rem;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.invoice-box .table-basic__blank_row {
+    height: 1.1rem !important;
+    background-color: #fff;
+}
+
+.invoice-box .table-basic--large-margin {
+    margin-top: 1.1rem;
+}
+
+.invoice-box .table-basic--no-margin {
+    margin-top: 0;
+}
+
+.invoice-box .table-basic--auto {
+    width: auto;
+}
+
+.invoice-box .table-basic--wide {
+    width: 100%;
+}
+
+.invoice-box .table-basic__header-border {
+    border-bottom: 2px solid #343a40;
+}
+
+.invoice-box .table-basic__header {
+    border: 1px solid #bababa;
+    padding: 8px;
+    text-align: left;
+    background-color: #f6f7fa;
+    font-style: normal;
+    font-weight: 600;
+    font-size: .5rem;
+    line-height: 12px;
+}
+
+.invoice-box .table-basic__header--lp {
+    width: 50px;
+}
+
+.invoice-box .table-basic__header--medium-size {
+    min-width: 300px;
+}
+
+.invoice-box .table-basic__header--small-txt {
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .5rem;
+    line-height: 12px;
+    display: block;
+}
+
+.invoice-box .table-basic__header--nowrap {
+    white-space: nowrap;
+}
+
+.invoice-box .table-basic__cell {
+    border: 1px solid #bababa;
+    padding: 8px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .5rem;
+    line-height: 15px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    white-space: normal;
+}
+
+.invoice-box .table-basic__cell--to-right {
+    text-align: right;
+}

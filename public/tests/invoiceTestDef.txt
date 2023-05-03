@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Faktura xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+         xmlns="http://crd.gov.pl/wzor/2021/11/29/11089/">
+    <Naglowek>
+        <KodFormularza kodSystemowy="FA (1)" wersjaSchemy="1-0E">FA</KodFormularza>
+        <WariantFormularza>1</WariantFormularza>
+        <DataWytworzeniaFa>2023-05-02T12:09:44Z</DataWytworzeniaFa>
+        <SystemInfo>Aplikacja Podatnika KSeF</SystemInfo>
+    </Naglowek>
+    <Podmiot1>
+        <DaneIdentyfikacyjne>
+            <NIP>9999999999</NIP>
+            <PelnaNazwa>Test company NIP 9999999999</PelnaNazwa>
+        </DaneIdentyfikacyjne>
+        <Adres>
+            <AdresPol>
+                <KodKraju>PL</KodKraju>
+                <Ulica>Vogla</Ulica>
+                <NrDomu>28</NrDomu>
+                <NrLokalu>100</NrLokalu>
+                <Miejscowosc>Warszawa</Miejscowosc>
+                <KodPocztowy>02-963</KodPocztowy>
+                <Poczta>Warszawa</Poczta>
+            </AdresPol>
+        </Adres>
+    </Podmiot1>
+    <Podmiot2>
+        <DaneIdentyfikacyjne>
+            <NIP>3133313331</NIP>
+            <PelnaNazwa>Test company NIP 3133313331</PelnaNazwa>
+        </DaneIdentyfikacyjne>
+        <Adres>
+            <AdresPol>
+                <KodKraju>PL</KodKraju>
+                <Ulica>Sarmacka</Ulica>
+                <NrDomu>4B</NrDomu>
+                <NrLokalu>55</NrLokalu>
+                <Miejscowosc>Warszawa</Miejscowosc>
+                <KodPocztowy>02-972</KodPocztowy>
+            </AdresPol>
+        </Adres>
+    </Podmiot2>
+    <Fa>
+        <KodWaluty>PLN</KodWaluty>
+        <P_1>2023-04-13</P_1>
+        <P_2>KOD/00001/2023</P_2>
+        <P_6>2023-05-02</P_6>
+        <P_13_1>2000</P_13_1>
+        <P_14_1>460</P_14_1>
+        <P_13_2>2000</P_13_2>
+        <P_14_2>160</P_14_2>
+        <P_13_3>5000</P_13_3>
+        <P_14_3>250</P_14_3>
+        <P_13_6>12000</P_13_6>
+        <P_13_7>6000</P_13_7>
+        <P_15>27870</P_15>
+        <Adnotacje>
+            <P_16>1</P_16>
+            <P_17>2</P_17>
+            <P_18>2</P_18>
+            <P_18A>1</P_18A>
+            <P_19>2</P_19>
+            <P_22>2</P_22>
+            <P_23>2</P_23>
+            <P_PMarzy>1</P_PMarzy>
+            <P_PMarzy_3_1>1</P_PMarzy_3_1>
+        </Adnotacje>
+        <RodzajFaktury>VAT</RodzajFaktury>
+        <FaWiersze>
+            <LiczbaWierszyFaktury>5</LiczbaWierszyFaktury>
+            <WartoscWierszyFaktury1>27000</WartoscWierszyFaktury1>
+            <FaWiersz>
+                <NrWierszaFa>1</NrWierszaFa>
+                <P_7>test serv 5%</P_7>
+                <P_8A>godz</P_8A>
+                <P_8B>10</P_8B>
+                <P_9A>500</P_9A>
+                <P_11>5000</P_11>
+                <P_12>5</P_12>
+            </FaWiersz>
+            <FaWiersz>
+                <NrWierszaFa>2</NrWierszaFa>
+                <P_7>test serv 23%</P_7>
+                <P_8A>godz</P_8A>
+                <P_8B>20</P_8B>
+                <P_9A>100</P_9A>
+                <P_11>2000</P_11>
+                <P_12>23</P_12>
+            </FaWiersz>
+            <FaWiersz>
+                <NrWierszaFa>3</NrWierszaFa>
+                <P_7>test serv ZW</P_7>
+                <P_8A>szt</P_8A>
+                <P_8B>30</P_8B>
+                <P_9A>200</P_9A>
+                <P_11>6000</P_11>
+                <P_12>zw</P_12>
+            </FaWiersz>
+            <FaWiersz>
+                <NrWierszaFa>4</NrWierszaFa>
+                <P_7>test serv 0%</P_7>
+                <P_8A>szt</P_8A>
+                <P_8B>40</P_8B>
+                <P_9A>300</P_9A>
+                <P_11>12000</P_11>
+                <P_12>0</P_12>
+            </FaWiersz>
+            <FaWiersz>
+                <NrWierszaFa>5</NrWierszaFa>
+                <P_7>test serv 8%</P_7>
+                <P_8A>kg</P_8A>
+                <P_8B>50</P_8B>
+                <P_9A>40</P_9A>
+                <P_11>2000</P_11>
+                <P_12>8</P_12>
+            </FaWiersz>
+        </FaWiersze>
+        <Platnosc>
+            <TerminyPlatnosci>
+                <TerminPlatnosci>2023-05-12</TerminPlatnosci>
+                <TerminPlatnosciOpis>przelew</TerminPlatnosciOpis>
+            </TerminyPlatnosci>
+            <FormaPlatnosci>6</FormaPlatnosci>
+            <RachunekBankowy>
+                <NrRBPL>41124030155049171909858866</NrRBPL>
+            </RachunekBankowy>
+        </Platnosc>
+    </Fa>
+</Faktura>

@@ -1,0 +1,1100 @@
+[
+        {
+            "invoiceReferenceNumber": "FV2022/08/0359",
+            "ksefReferenceNumber": "1111111111-20230425-AA2783-ECCE1F-5E",
+            "invoiceHash": {
+                "hashSHA": {
+                    "algorithm": "SHA-256",
+                    "encoding": "Base64",
+                    "value": "Qxqi22jLO/zdBWJsHmBaJ0zGQLLxPjKPuZLODjgC73I="
+                },
+                "fileSize": 5429
+            },
+            "invoicingDate": "2023-04-25",
+            "acquisitionTimestamp": "2023-04-25T12:23:00.889Z",
+            "subjectBy": {
+                "issuedByIdentifier": {
+                    "type": "onip",
+                    "identifier": "1111111111"
+                },
+                "issuedByName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "ABC Developex SA"
+                }
+            },
+            "subjectTo": {
+                "issuedToIdentifier": {
+                    "type": "none"
+                },
+                "issuedToName": {
+                    "type": "pn",
+                    "tradeName": null,
+                    "firstName": "Jan",
+                    "surname": "Kowalski"
+                }
+            },
+            "subjectsOtherList": [
+                {
+                    "issuedToIdentifier": {
+                        "type": "none"
+                    },
+                    "issuedToName": {
+                        "type": "pn",
+                        "tradeName": null,
+                        "firstName": "Grażyna",
+                        "surname": "Kowalska"
+                    },
+                    "subjectOtherType": "additional_purchaser"
+                },
+                {
+                    "issuedToIdentifier": {
+                        "type": "onip",
+                        "identifier": "9999999999"
+                    },
+                    "issuedToName": {
+                        "type": "fn",
+                        "tradeName": null,
+                        "fullName": "ABC Developex sp. z o. o."
+                    },
+                    "subjectOtherType": "original_subject"
+                }
+            ],
+            "net": "284277.75",
+            "vat": "23357.25",
+            "gross": "307635.00",
+            "currency": "PLN"
+        },
+        {
+            "invoiceReferenceNumber": "FV2023/11/6822",
+            "ksefReferenceNumber": "1111111111-20230425-BF9E77-6EDCEB-38",
+            "invoiceHash": {
+                "hashSHA": {
+                    "algorithm": "SHA-256",
+                    "encoding": "Base64",
+                    "value": "AazAssXH9fV8UJuJ7AdvqSJWs0VNRRnFtPgnSlmyxXM="
+                },
+                "fileSize": 5429
+            },
+            "invoicingDate": "2023-04-25",
+            "acquisitionTimestamp": "2023-04-25T12:18:18.016Z",
+            "subjectBy": {
+                "issuedByIdentifier": {
+                    "type": "onip",
+                    "identifier": "1111111111"
+                },
+                "issuedByName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "ABC Developex SA"
+                }
+            },
+            "subjectTo": {
+                "issuedToIdentifier": {
+                    "type": "none"
+                },
+                "issuedToName": {
+                    "type": "pn",
+                    "tradeName": null,
+                    "firstName": "Jan",
+                    "surname": "Kowalski"
+                }
+            },
+            "subjectsOtherList": [
+                {
+                    "issuedToIdentifier": {
+                        "type": "none"
+                    },
+                    "issuedToName": {
+                        "type": "pn",
+                        "tradeName": null,
+                        "firstName": "Grażyna",
+                        "surname": "Kowalska"
+                    },
+                    "subjectOtherType": "additional_purchaser"
+                },
+                {
+                    "issuedToIdentifier": {
+                        "type": "onip",
+                        "identifier": "9999999999"
+                    },
+                    "issuedToName": {
+                        "type": "fn",
+                        "tradeName": null,
+                        "fullName": "ABC Developex sp. z o. o."
+                    },
+                    "subjectOtherType": "original_subject"
+                }
+            ],
+            "net": "284277.75",
+            "vat": "23357.25",
+            "gross": "307635.00",
+            "currency": "PLN"
+        },
+        {
+            "invoiceReferenceNumber": "FV2023/06/9508",
+            "ksefReferenceNumber": "1111111111-20230425-688B88-F37F9D-B3",
+            "invoiceHash": {
+                "hashSHA": {
+                    "algorithm": "SHA-256",
+                    "encoding": "Base64",
+                    "value": "wKu0QmJo2mcrKoKYhvC3tF0/qgVr9A6Wzzx/GUBmJxM="
+                },
+                "fileSize": 5429
+            },
+            "invoicingDate": "2023-04-25",
+            "acquisitionTimestamp": "2023-04-25T12:15:27.504Z",
+            "subjectBy": {
+                "issuedByIdentifier": {
+                    "type": "onip",
+                    "identifier": "1111111111"
+                },
+                "issuedByName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "ABC Developex SA"
+                }
+            },
+            "subjectTo": {
+                "issuedToIdentifier": {
+                    "type": "none"
+                },
+                "issuedToName": {
+                    "type": "pn",
+                    "tradeName": null,
+                    "firstName": "Jan",
+                    "surname": "Kowalski"
+                }
+            },
+            "subjectsOtherList": [
+                {
+                    "issuedToIdentifier": {
+                        "type": "none"
+                    },
+                    "issuedToName": {
+                        "type": "pn",
+                        "tradeName": null,
+                        "firstName": "Grażyna",
+                        "surname": "Kowalska"
+                    },
+                    "subjectOtherType": "additional_purchaser"
+                },
+                {
+                    "issuedToIdentifier": {
+                        "type": "onip",
+                        "identifier": "9999999999"
+                    },
+                    "issuedToName": {
+                        "type": "fn",
+                        "tradeName": null,
+                        "fullName": "ABC Developex sp. z o. o."
+                    },
+                    "subjectOtherType": "original_subject"
+                }
+            ],
+            "net": "284277.75",
+            "vat": "23357.25",
+            "gross": "307635.00",
+            "currency": "PLN"
+        },
+        {
+            "invoiceReferenceNumber": "FV2023/06/5390",
+            "ksefReferenceNumber": "1111111111-20230425-CB8083-8BCDA9-F8",
+            "invoiceHash": {
+                "hashSHA": {
+                    "algorithm": "SHA-256",
+                    "encoding": "Base64",
+                    "value": "KJUCWcjIW76HUoPBK0Rf6Kz6WTBvZVqM7XIuC/ZCv/Q="
+                },
+                "fileSize": 5429
+            },
+            "invoicingDate": "2023-04-25",
+            "acquisitionTimestamp": "2023-04-25T12:11:31.932Z",
+            "subjectBy": {
+                "issuedByIdentifier": {
+                    "type": "onip",
+                    "identifier": "1111111111"
+                },
+                "issuedByName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "ABC Developex SA"
+                }
+            },
+            "subjectTo": {
+                "issuedToIdentifier": {
+                    "type": "none"
+                },
+                "issuedToName": {
+                    "type": "pn",
+                    "tradeName": null,
+                    "firstName": "Jan",
+                    "surname": "Kowalski"
+                }
+            },
+            "subjectsOtherList": [
+                {
+                    "issuedToIdentifier": {
+                        "type": "none"
+                    },
+                    "issuedToName": {
+                        "type": "pn",
+                        "tradeName": null,
+                        "firstName": "Grażyna",
+                        "surname": "Kowalska"
+                    },
+                    "subjectOtherType": "additional_purchaser"
+                },
+                {
+                    "issuedToIdentifier": {
+                        "type": "onip",
+                        "identifier": "9999999999"
+                    },
+                    "issuedToName": {
+                        "type": "fn",
+                        "tradeName": null,
+                        "fullName": "ABC Developex sp. z o. o."
+                    },
+                    "subjectOtherType": "original_subject"
+                }
+            ],
+            "net": "284277.75",
+            "vat": "23357.25",
+            "gross": "307635.00",
+            "currency": "PLN"
+        },
+        {
+            "invoiceReferenceNumber": "FV2022/08/1082",
+            "ksefReferenceNumber": "1111111111-20230425-72C18C-CA6D1A-89",
+            "invoiceHash": {
+                "hashSHA": {
+                    "algorithm": "SHA-256",
+                    "encoding": "Base64",
+                    "value": "UI2RaB86BX2tR0BZhqmTFOZTsN0Op+23fdXoA9j2A0Y="
+                },
+                "fileSize": 5429
+            },
+            "invoicingDate": "2023-04-25",
+            "acquisitionTimestamp": "2023-04-25T11:52:26.759Z",
+            "subjectBy": {
+                "issuedByIdentifier": {
+                    "type": "onip",
+                    "identifier": "1111111111"
+                },
+                "issuedByName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "ABC Developex SA"
+                }
+            },
+            "subjectTo": {
+                "issuedToIdentifier": {
+                    "type": "none"
+                },
+                "issuedToName": {
+                    "type": "pn",
+                    "tradeName": null,
+                    "firstName": "Jan",
+                    "surname": "Kowalski"
+                }
+            },
+            "subjectsOtherList": [
+                {
+                    "issuedToIdentifier": {
+                        "type": "none"
+                    },
+                    "issuedToName": {
+                        "type": "pn",
+                        "tradeName": null,
+                        "firstName": "Grażyna",
+                        "surname": "Kowalska"
+                    },
+                    "subjectOtherType": "additional_purchaser"
+                },
+                {
+                    "issuedToIdentifier": {
+                        "type": "onip",
+                        "identifier": "9999999999"
+                    },
+                    "issuedToName": {
+                        "type": "fn",
+                        "tradeName": null,
+                        "fullName": "ABC Developex sp. z o. o."
+                    },
+                    "subjectOtherType": "original_subject"
+                }
+            ],
+            "net": "284277.75",
+            "vat": "23357.25",
+            "gross": "307635.00",
+            "currency": "PLN"
+        },
+        {
+            "invoiceReferenceNumber": "FV2022/02/9176",
+            "ksefReferenceNumber": "1111111111-20230425-EFFC5C-8D0DAA-16",
+            "invoiceHash": {
+                "hashSHA": {
+                    "algorithm": "SHA-256",
+                    "encoding": "Base64",
+                    "value": "5h24WQU59iq3Fnv61p09E5raWAUXxBXB7m/rHtDmedA="
+                },
+                "fileSize": 5429
+            },
+            "invoicingDate": "2023-04-25",
+            "acquisitionTimestamp": "2023-04-25T11:51:11.673Z",
+            "subjectBy": {
+                "issuedByIdentifier": {
+                    "type": "onip",
+                    "identifier": "1111111111"
+                },
+                "issuedByName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "ABC Developex SA"
+                }
+            },
+            "subjectTo": {
+                "issuedToIdentifier": {
+                    "type": "none"
+                },
+                "issuedToName": {
+                    "type": "pn",
+                    "tradeName": null,
+                    "firstName": "Jan",
+                    "surname": "Kowalski"
+                }
+            },
+            "subjectsOtherList": [
+                {
+                    "issuedToIdentifier": {
+                        "type": "none"
+                    },
+                    "issuedToName": {
+                        "type": "pn",
+                        "tradeName": null,
+                        "firstName": "Grażyna",
+                        "surname": "Kowalska"
+                    },
+                    "subjectOtherType": "additional_purchaser"
+                },
+                {
+                    "issuedToIdentifier": {
+                        "type": "onip",
+                        "identifier": "9999999999"
+                    },
+                    "issuedToName": {
+                        "type": "fn",
+                        "tradeName": null,
+                        "fullName": "ABC Developex sp. z o. o."
+                    },
+                    "subjectOtherType": "original_subject"
+                }
+            ],
+            "net": "284277.75",
+            "vat": "23357.25",
+            "gross": "307635.00",
+            "currency": "PLN"
+        },
+        {
+            "invoiceReferenceNumber": "FV2023/01/3476",
+            "ksefReferenceNumber": "1111111111-20230425-21B8E6-26EA19-FD",
+            "invoiceHash": {
+                "hashSHA": {
+                    "algorithm": "SHA-256",
+                    "encoding": "Base64",
+                    "value": "mRYVGZX4UE9Jw08hK9KqA76ycalV+VvoFtV8SEQdcg8="
+                },
+                "fileSize": 5429
+            },
+            "invoicingDate": "2023-04-25",
+            "acquisitionTimestamp": "2023-04-25T11:47:48.854Z",
+            "subjectBy": {
+                "issuedByIdentifier": {
+                    "type": "onip",
+                    "identifier": "1111111111"
+                },
+                "issuedByName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "ABC Developex SA"
+                }
+            },
+            "subjectTo": {
+                "issuedToIdentifier": {
+                    "type": "none"
+                },
+                "issuedToName": {
+                    "type": "pn",
+                    "tradeName": null,
+                    "firstName": "Jan",
+                    "surname": "Kowalski"
+                }
+            },
+            "subjectsOtherList": [
+                {
+                    "issuedToIdentifier": {
+                        "type": "none"
+                    },
+                    "issuedToName": {
+                        "type": "pn",
+                        "tradeName": null,
+                        "firstName": "Grażyna",
+                        "surname": "Kowalska"
+                    },
+                    "subjectOtherType": "additional_purchaser"
+                },
+                {
+                    "issuedToIdentifier": {
+                        "type": "onip",
+                        "identifier": "9999999999"
+                    },
+                    "issuedToName": {
+                        "type": "fn",
+                        "tradeName": null,
+                        "fullName": "ABC Developex sp. z o. o."
+                    },
+                    "subjectOtherType": "original_subject"
+                }
+            ],
+            "net": "284277.75",
+            "vat": "23357.25",
+            "gross": "307635.00",
+            "currency": "PLN"
+        },
+        {
+            "invoiceReferenceNumber": "FV2022/08/4534",
+            "ksefReferenceNumber": "1111111111-20230425-ED4097-E2E92D-01",
+            "invoiceHash": {
+                "hashSHA": {
+                    "algorithm": "SHA-256",
+                    "encoding": "Base64",
+                    "value": "JrOs3M21B/paj7cVmWFcHcBeTVkwBMCsTJYgU3ALQiI="
+                },
+                "fileSize": 5429
+            },
+            "invoicingDate": "2023-04-25",
+            "acquisitionTimestamp": "2023-04-25T11:47:35.484Z",
+            "subjectBy": {
+                "issuedByIdentifier": {
+                    "type": "onip",
+                    "identifier": "1111111111"
+                },
+                "issuedByName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "ABC Developex SA"
+                }
+            },
+            "subjectTo": {
+                "issuedToIdentifier": {
+                    "type": "none"
+                },
+                "issuedToName": {
+                    "type": "pn",
+                    "tradeName": null,
+                    "firstName": "Jan",
+                    "surname": "Kowalski"
+                }
+            },
+            "subjectsOtherList": [
+                {
+                    "issuedToIdentifier": {
+                        "type": "none"
+                    },
+                    "issuedToName": {
+                        "type": "pn",
+                        "tradeName": null,
+                        "firstName": "Grażyna",
+                        "surname": "Kowalska"
+                    },
+                    "subjectOtherType": "additional_purchaser"
+                },
+                {
+                    "issuedToIdentifier": {
+                        "type": "onip",
+                        "identifier": "9999999999"
+                    },
+                    "issuedToName": {
+                        "type": "fn",
+                        "tradeName": null,
+                        "fullName": "ABC Developex sp. z o. o."
+                    },
+                    "subjectOtherType": "original_subject"
+                }
+            ],
+            "net": "284277.75",
+            "vat": "23357.25",
+            "gross": "307635.00",
+            "currency": "PLN"
+        },
+        {
+            "invoiceReferenceNumber": "FV2022/06/2177",
+            "ksefReferenceNumber": "1111111111-20230425-9276BD-3EFA61-5B",
+            "invoiceHash": {
+                "hashSHA": {
+                    "algorithm": "SHA-256",
+                    "encoding": "Base64",
+                    "value": "TJr0zVRORvD08AF6rBQFTWlkwR6nG4otDxS/NWTcp7k="
+                },
+                "fileSize": 5429
+            },
+            "invoicingDate": "2023-04-25",
+            "acquisitionTimestamp": "2023-04-25T11:47:04.448Z",
+            "subjectBy": {
+                "issuedByIdentifier": {
+                    "type": "onip",
+                    "identifier": "1111111111"
+                },
+                "issuedByName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "ABC Developex SA"
+                }
+            },
+            "subjectTo": {
+                "issuedToIdentifier": {
+                    "type": "none"
+                },
+                "issuedToName": {
+                    "type": "pn",
+                    "tradeName": null,
+                    "firstName": "Jan",
+                    "surname": "Kowalski"
+                }
+            },
+            "subjectsOtherList": [
+                {
+                    "issuedToIdentifier": {
+                        "type": "none"
+                    },
+                    "issuedToName": {
+                        "type": "pn",
+                        "tradeName": null,
+                        "firstName": "Grażyna",
+                        "surname": "Kowalska"
+                    },
+                    "subjectOtherType": "additional_purchaser"
+                },
+                {
+                    "issuedToIdentifier": {
+                        "type": "onip",
+                        "identifier": "9999999999"
+                    },
+                    "issuedToName": {
+                        "type": "fn",
+                        "tradeName": null,
+                        "fullName": "ABC Developex sp. z o. o."
+                    },
+                    "subjectOtherType": "original_subject"
+                }
+            ],
+            "net": "284277.75",
+            "vat": "23357.25",
+            "gross": "307635.00",
+            "currency": "PLN"
+        },
+        {
+            "invoiceReferenceNumber": "FV2023/02/8723",
+            "ksefReferenceNumber": "1111111111-20230425-2F033C-4754E7-49",
+            "invoiceHash": {
+                "hashSHA": {
+                    "algorithm": "SHA-256",
+                    "encoding": "Base64",
+                    "value": "oA7jOF8xDcHfCdK5CWSh3JM5hOsQFGxGq7+t9Avu0q4="
+                },
+                "fileSize": 5429
+            },
+            "invoicingDate": "2023-04-25",
+            "acquisitionTimestamp": "2023-04-25T11:46:19.757Z",
+            "subjectBy": {
+                "issuedByIdentifier": {
+                    "type": "onip",
+                    "identifier": "1111111111"
+                },
+                "issuedByName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "ABC Developex SA"
+                }
+            },
+            "subjectTo": {
+                "issuedToIdentifier": {
+                    "type": "none"
+                },
+                "issuedToName": {
+                    "type": "pn",
+                    "tradeName": null,
+                    "firstName": "Jan",
+                    "surname": "Kowalski"
+                }
+            },
+            "subjectsOtherList": [
+                {
+                    "issuedToIdentifier": {
+                        "type": "none"
+                    },
+                    "issuedToName": {
+                        "type": "pn",
+                        "tradeName": null,
+                        "firstName": "Grażyna",
+                        "surname": "Kowalska"
+                    },
+                    "subjectOtherType": "additional_purchaser"
+                },
+                {
+                    "issuedToIdentifier": {
+                        "type": "onip",
+                        "identifier": "9999999999"
+                    },
+                    "issuedToName": {
+                        "type": "fn",
+                        "tradeName": null,
+                        "fullName": "ABC Developex sp. z o. o."
+                    },
+                    "subjectOtherType": "original_subject"
+                }
+            ],
+            "net": "284277.75",
+            "vat": "23357.25",
+            "gross": "307635.00",
+            "currency": "PLN"
+        },
+        {
+            "invoiceReferenceNumber": "FV2023/01/6513",
+            "ksefReferenceNumber": "1111111111-20230425-A75776-008896-AF",
+            "invoiceHash": {
+                "hashSHA": {
+                    "algorithm": "SHA-256",
+                    "encoding": "Base64",
+                    "value": "iZiK/U4TL0JFbnEPWHUDAhF6mskmmf9OapLTCq1E5Sg="
+                },
+                "fileSize": 5429
+            },
+            "invoicingDate": "2023-04-25",
+            "acquisitionTimestamp": "2023-04-25T11:28:26.645Z",
+            "subjectBy": {
+                "issuedByIdentifier": {
+                    "type": "onip",
+                    "identifier": "1111111111"
+                },
+                "issuedByName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "ABC Developex SA"
+                }
+            },
+            "subjectTo": {
+                "issuedToIdentifier": {
+                    "type": "none"
+                },
+                "issuedToName": {
+                    "type": "pn",
+                    "tradeName": null,
+                    "firstName": "Jan",
+                    "surname": "Kowalski"
+                }
+            },
+            "subjectsOtherList": [
+                {
+                    "issuedToIdentifier": {
+                        "type": "none"
+                    },
+                    "issuedToName": {
+                        "type": "pn",
+                        "tradeName": null,
+                        "firstName": "Grażyna",
+                        "surname": "Kowalska"
+                    },
+                    "subjectOtherType": "additional_purchaser"
+                },
+                {
+                    "issuedToIdentifier": {
+                        "type": "onip",
+                        "identifier": "9999999999"
+                    },
+                    "issuedToName": {
+                        "type": "fn",
+                        "tradeName": null,
+                        "fullName": "ABC Developex sp. z o. o."
+                    },
+                    "subjectOtherType": "original_subject"
+                }
+            ],
+            "net": "284277.75",
+            "vat": "23357.25",
+            "gross": "307635.00",
+            "currency": "PLN"
+        },
+        {
+            "invoiceReferenceNumber": "FV2022/10/6064",
+            "ksefReferenceNumber": "1111111111-20230425-D76BA4-71774A-E7",
+            "invoiceHash": {
+                "hashSHA": {
+                    "algorithm": "SHA-256",
+                    "encoding": "Base64",
+                    "value": "deM/9x7Dg52vFZ+DeB6q2lPaPS16wZzfCf3MSbovSiU="
+                },
+                "fileSize": 5429
+            },
+            "invoicingDate": "2023-04-25",
+            "acquisitionTimestamp": "2023-04-25T11:25:47.530Z",
+            "subjectBy": {
+                "issuedByIdentifier": {
+                    "type": "onip",
+                    "identifier": "1111111111"
+                },
+                "issuedByName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "ABC Developex SA"
+                }
+            },
+            "subjectTo": {
+                "issuedToIdentifier": {
+                    "type": "none"
+                },
+                "issuedToName": {
+                    "type": "pn",
+                    "tradeName": null,
+                    "firstName": "Jan",
+                    "surname": "Kowalski"
+                }
+            },
+            "subjectsOtherList": [
+                {
+                    "issuedToIdentifier": {
+                        "type": "none"
+                    },
+                    "issuedToName": {
+                        "type": "pn",
+                        "tradeName": null,
+                        "firstName": "Grażyna",
+                        "surname": "Kowalska"
+                    },
+                    "subjectOtherType": "additional_purchaser"
+                },
+                {
+                    "issuedToIdentifier": {
+                        "type": "onip",
+                        "identifier": "9999999999"
+                    },
+                    "issuedToName": {
+                        "type": "fn",
+                        "tradeName": null,
+                        "fullName": "ABC Developex sp. z o. o."
+                    },
+                    "subjectOtherType": "original_subject"
+                }
+            ],
+            "net": "284277.75",
+            "vat": "23357.25",
+            "gross": "307635.00",
+            "currency": "PLN"
+        },
+        {
+            "invoiceReferenceNumber": "FV2023/08/7628",
+            "ksefReferenceNumber": "1111111111-20230425-965D1C-3328E8-F1",
+            "invoiceHash": {
+                "hashSHA": {
+                    "algorithm": "SHA-256",
+                    "encoding": "Base64",
+                    "value": "fiQ8WECftVij4zjXTSb2gHUS1Y7mnujMhsQekPU6LzA="
+                },
+                "fileSize": 5429
+            },
+            "invoicingDate": "2023-04-25",
+            "acquisitionTimestamp": "2023-04-25T11:25:09.680Z",
+            "subjectBy": {
+                "issuedByIdentifier": {
+                    "type": "onip",
+                    "identifier": "1111111111"
+                },
+                "issuedByName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "ABC Developex SA"
+                }
+            },
+            "subjectTo": {
+                "issuedToIdentifier": {
+                    "type": "none"
+                },
+                "issuedToName": {
+                    "type": "pn",
+                    "tradeName": null,
+                    "firstName": "Jan",
+                    "surname": "Kowalski"
+                }
+            },
+            "subjectsOtherList": [
+                {
+                    "issuedToIdentifier": {
+                        "type": "none"
+                    },
+                    "issuedToName": {
+                        "type": "pn",
+                        "tradeName": null,
+                        "firstName": "Grażyna",
+                        "surname": "Kowalska"
+                    },
+                    "subjectOtherType": "additional_purchaser"
+                },
+                {
+                    "issuedToIdentifier": {
+                        "type": "onip",
+                        "identifier": "9999999999"
+                    },
+                    "issuedToName": {
+                        "type": "fn",
+                        "tradeName": null,
+                        "fullName": "ABC Developex sp. z o. o."
+                    },
+                    "subjectOtherType": "original_subject"
+                }
+            ],
+            "net": "284277.75",
+            "vat": "23357.25",
+            "gross": "307635.00",
+            "currency": "PLN"
+        },
+        {
+            "invoiceReferenceNumber": "FV2023/04/7102",
+            "ksefReferenceNumber": "1111111111-20230425-838E42-45A7B7-59",
+            "invoiceHash": {
+                "hashSHA": {
+                    "algorithm": "SHA-256",
+                    "encoding": "Base64",
+                    "value": "FGOfBnD9SGaatU+ZTGZFKXrk4dANCsWuqz2phed/jYw="
+                },
+                "fileSize": 5429
+            },
+            "invoicingDate": "2023-04-25",
+            "acquisitionTimestamp": "2023-04-25T11:16:08.131Z",
+            "subjectBy": {
+                "issuedByIdentifier": {
+                    "type": "onip",
+                    "identifier": "1111111111"
+                },
+                "issuedByName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "ABC Developex SA"
+                }
+            },
+            "subjectTo": {
+                "issuedToIdentifier": {
+                    "type": "none"
+                },
+                "issuedToName": {
+                    "type": "pn",
+                    "tradeName": null,
+                    "firstName": "Jan",
+                    "surname": "Kowalski"
+                }
+            },
+            "subjectsOtherList": [
+                {
+                    "issuedToIdentifier": {
+                        "type": "none"
+                    },
+                    "issuedToName": {
+                        "type": "pn",
+                        "tradeName": null,
+                        "firstName": "Grażyna",
+                        "surname": "Kowalska"
+                    },
+                    "subjectOtherType": "additional_purchaser"
+                },
+                {
+                    "issuedToIdentifier": {
+                        "type": "onip",
+                        "identifier": "9999999999"
+                    },
+                    "issuedToName": {
+                        "type": "fn",
+                        "tradeName": null,
+                        "fullName": "ABC Developex sp. z o. o."
+                    },
+                    "subjectOtherType": "original_subject"
+                }
+            ],
+            "net": "284277.75",
+            "vat": "23357.25",
+            "gross": "307635.00",
+            "currency": "PLN"
+        },
+        {
+            "invoiceReferenceNumber": "CNPL/24/23",
+            "ksefReferenceNumber": "1570317527-20230424-E49090-B08B6A-23",
+            "invoiceHash": {
+                "hashSHA": {
+                    "algorithm": "SHA-256",
+                    "encoding": "Base64",
+                    "value": "/KSukIe71Z+4KAbRY9BsnKxkaaWok1grt6JnTBVGpQ0="
+                },
+                "fileSize": 4175
+            },
+            "invoicingDate": "2023-04-24",
+            "acquisitionTimestamp": "2023-04-24T09:37:50.182Z",
+            "subjectBy": {
+                "issuedByIdentifier": {
+                    "type": "onip",
+                    "identifier": "1570317527"
+                },
+                "issuedByName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "*az*a ****Y"
+                }
+            },
+            "subjectTo": {
+                "issuedToIdentifier": {
+                    "type": "onip",
+                    "identifier": "9999999090"
+                },
+                "issuedToName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "ąęćółńżźĄĘĆÓŁŃŻŹ"
+                }
+            },
+            "subjectsOtherList": [
+                {
+                    "issuedToIdentifier": {
+                        "type": "onip",
+                        "identifier": "9999999999"
+                    },
+                    "issuedToName": {
+                        "type": "fn",
+                        "tradeName": null,
+                        "fullName": "****a*az*a"
+                    },
+                    "subjectOtherType": "factor"
+                }
+            ],
+            "net": "-1217.52",
+            "vat": "-280.03",
+            "gross": "-1497.55",
+            "currency": "PLN"
+        },
+        {
+            "invoiceReferenceNumber": "INPL/220/23",
+            "ksefReferenceNumber": "1570317527-20230424-1F578A-B4FEE0-6C",
+            "invoiceHash": {
+                "hashSHA": {
+                    "algorithm": "SHA-256",
+                    "encoding": "Base64",
+                    "value": "lMde1goIrtlcGJtQtRxKwF7whLUncyN4Zq17potI69E="
+                },
+                "fileSize": 9823
+            },
+            "invoicingDate": "2023-04-24",
+            "acquisitionTimestamp": "2023-04-24T09:31:12.801Z",
+            "subjectBy": {
+                "issuedByIdentifier": {
+                    "type": "onip",
+                    "identifier": "1570317527"
+                },
+                "issuedByName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "*az*a ****Y"
+                }
+            },
+            "subjectTo": {
+                "issuedToIdentifier": {
+                    "type": "onip",
+                    "identifier": "9999999090"
+                },
+                "issuedToName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "ąęćółńżźĄĘĆÓŁŃŻŹ"
+                }
+            },
+            "subjectsOtherList": [
+                {
+                    "issuedToIdentifier": {
+                        "type": "onip",
+                        "identifier": "9999999999"
+                    },
+                    "issuedToName": {
+                        "type": "fn",
+                        "tradeName": null,
+                        "fullName": "****a*az*a"
+                    },
+                    "subjectOtherType": "factor"
+                }
+            ],
+            "net": "65375.00",
+            "vat": "15036.26",
+            "gross": "80411.26",
+            "currency": "PLN"
+        },
+        {
+            "invoiceReferenceNumber": "FV2022/08/12",
+            "ksefReferenceNumber": "4968403069-20230423-7D8639-C93610-AF",
+            "invoiceHash": {
+                "hashSHA": {
+                    "algorithm": "SHA-256",
+                    "encoding": "Base64",
+                    "value": "rAwuo/Qtdo/bnjOpIknjvoAfzx+eY06bUVotLLsS/GA="
+                },
+                "fileSize": 4649
+            },
+            "invoicingDate": "2023-04-23",
+            "acquisitionTimestamp": "2023-04-23T21:53:16.966Z",
+            "subjectBy": {
+                "issuedByIdentifier": {
+                    "type": "onip",
+                    "identifier": "4968403069"
+                },
+                "issuedByName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "ABC Developex SA"
+                }
+            },
+            "subjectTo": {
+                "issuedToIdentifier": {
+                    "type": "none"
+                },
+                "issuedToName": {
+                    "type": "pn",
+                    "tradeName": null,
+                    "firstName": "Jan",
+                    "surname": "Kowalski"
+                }
+            },
+            "subjectsOtherList": [
+                {
+                    "issuedToIdentifier": {
+                        "type": "none"
+                    },
+                    "issuedToName": {
+                        "type": "pn",
+                        "tradeName": null,
+                        "firstName": "Grażyna",
+                        "surname": "Kowalska"
+                    },
+                    "subjectOtherType": "additional_purchaser"
+                },
+                {
+                    "issuedToIdentifier": {
+                        "type": "onip",
+                        "identifier": "9999999999"
+                    },
+                    "issuedToName": {
+                        "type": "fn",
+                        "tradeName": null,
+                        "fullName": "ABC Developex sp. z o. o."
+                    },
+                    "subjectOtherType": "original_subject"
+                }
+            ],
+            "net": "284277.75",
+            "vat": "23357.25",
+            "gross": "307635.00",
+            "currency": "PLN"
+        }
+    ]

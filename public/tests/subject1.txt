@@ -1,0 +1,402 @@
+[
+        {
+            "invoiceReferenceNumber": "FV2022/02/150",
+            "ksefReferenceNumber": "7777777777-20230420-D1D28E-EA3CB3-6E",
+            "invoiceHash": {
+                "hashSHA": {
+                    "algorithm": "SHA-256",
+                    "encoding": "Base64",
+                    "value": "EDT1YsvhEYwk3dqmfodm1C8IhDaqPRM4IIB/WubmZRc="
+                },
+                "fileSize": 4511
+            },
+            "invoicingDate": "2023-04-20",
+            "acquisitionTimestamp": "2023-04-20T02:05:15.285Z",
+            "subjectBy": {
+                "issuedByIdentifier": {
+                    "type": "onip",
+                    "identifier": "7777777777"
+                },
+                "issuedByName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "ABC AGD sp. z o. o."
+                }
+            },
+            "subjectTo": {
+                "issuedToIdentifier": {
+                    "type": "none"
+                },
+                "issuedToName": {
+                    "type": "pn",
+                    "tradeName": null,
+                    "firstName": "Jan",
+                    "surname": "Kowalski"
+                }
+            },
+            "net": "1667.61",
+            "vat": "383.38",
+            "gross": "2051.00",
+            "currency": "PLN"
+        },
+        {
+            "invoiceReferenceNumber": "FV2022/02/150",
+            "ksefReferenceNumber": "7777777777-20230420-1824AD-0910BB-A5",
+            "invoiceHash": {
+                "hashSHA": {
+                    "algorithm": "SHA-256",
+                    "encoding": "Base64",
+                    "value": "EDT1YsvhEYwk3dqmfodm1C8IhDaqPRM4IIB/WubmZRc="
+                },
+                "fileSize": 4511
+            },
+            "invoicingDate": "2023-04-20",
+            "acquisitionTimestamp": "2023-04-20T02:04:38.235Z",
+            "subjectBy": {
+                "issuedByIdentifier": {
+                    "type": "onip",
+                    "identifier": "7777777777"
+                },
+                "issuedByName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "ABC AGD sp. z o. o."
+                }
+            },
+            "subjectTo": {
+                "issuedToIdentifier": {
+                    "type": "none"
+                },
+                "issuedToName": {
+                    "type": "pn",
+                    "tradeName": null,
+                    "firstName": "Jan",
+                    "surname": "Kowalski"
+                }
+            },
+            "net": "1667.61",
+            "vat": "383.38",
+            "gross": "2051.00",
+            "currency": "PLN"
+        },
+        {
+            "invoiceReferenceNumber": "FV2022/02/150",
+            "ksefReferenceNumber": "7777777777-20230418-C61EA3-5B41C0-92",
+            "invoiceHash": {
+                "hashSHA": {
+                    "algorithm": "SHA-256",
+                    "encoding": "Base64",
+                    "value": "EDT1YsvhEYwk3dqmfodm1C8IhDaqPRM4IIB/WubmZRc="
+                },
+                "fileSize": 4511
+            },
+            "invoicingDate": "2023-04-18",
+            "acquisitionTimestamp": "2023-04-18T02:04:45.293Z",
+            "subjectBy": {
+                "issuedByIdentifier": {
+                    "type": "onip",
+                    "identifier": "7777777777"
+                },
+                "issuedByName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "ABC AGD sp. z o. o."
+                }
+            },
+            "subjectTo": {
+                "issuedToIdentifier": {
+                    "type": "none"
+                },
+                "issuedToName": {
+                    "type": "pn",
+                    "tradeName": null,
+                    "firstName": "Jan",
+                    "surname": "Kowalski"
+                }
+            },
+            "net": "1667.61",
+            "vat": "383.38",
+            "gross": "2051.00",
+            "currency": "PLN"
+        },
+        {
+            "invoiceReferenceNumber": "FV2022/02/150",
+            "ksefReferenceNumber": "7777777777-20230418-94B173-4BF554-AF",
+            "invoiceHash": {
+                "hashSHA": {
+                    "algorithm": "SHA-256",
+                    "encoding": "Base64",
+                    "value": "EDT1YsvhEYwk3dqmfodm1C8IhDaqPRM4IIB/WubmZRc="
+                },
+                "fileSize": 4511
+            },
+            "invoicingDate": "2023-04-18",
+            "acquisitionTimestamp": "2023-04-18T02:04:06.104Z",
+            "subjectBy": {
+                "issuedByIdentifier": {
+                    "type": "onip",
+                    "identifier": "7777777777"
+                },
+                "issuedByName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "ABC AGD sp. z o. o."
+                }
+            },
+            "subjectTo": {
+                "issuedToIdentifier": {
+                    "type": "none"
+                },
+                "issuedToName": {
+                    "type": "pn",
+                    "tradeName": null,
+                    "firstName": "Jan",
+                    "surname": "Kowalski"
+                }
+            },
+            "net": "1667.61",
+            "vat": "383.38",
+            "gross": "2051.00",
+            "currency": "PLN"
+        },
+        {
+            "invoiceReferenceNumber": "FV2022/02/150",
+            "ksefReferenceNumber": "7777777777-20230414-8F6CA2-4FF375-EB",
+            "invoiceHash": {
+                "hashSHA": {
+                    "algorithm": "SHA-256",
+                    "encoding": "Base64",
+                    "value": "EDT1YsvhEYwk3dqmfodm1C8IhDaqPRM4IIB/WubmZRc="
+                },
+                "fileSize": 4511
+            },
+            "invoicingDate": "2023-04-14",
+            "acquisitionTimestamp": "2023-04-14T14:06:05.310Z",
+            "subjectBy": {
+                "issuedByIdentifier": {
+                    "type": "onip",
+                    "identifier": "7777777777"
+                },
+                "issuedByName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "ABC AGD sp. z o. o."
+                }
+            },
+            "subjectTo": {
+                "issuedToIdentifier": {
+                    "type": "none"
+                },
+                "issuedToName": {
+                    "type": "pn",
+                    "tradeName": null,
+                    "firstName": "Jan",
+                    "surname": "Kowalski"
+                }
+            },
+            "net": "1667.61",
+            "vat": "383.38",
+            "gross": "2051.00",
+            "currency": "PLN"
+        },
+        {
+            "invoiceReferenceNumber": "FV2022/02/150",
+            "ksefReferenceNumber": "7777777777-20230414-5B81AE-1F7EC0-B4",
+            "invoiceHash": {
+                "hashSHA": {
+                    "algorithm": "SHA-256",
+                    "encoding": "Base64",
+                    "value": "EDT1YsvhEYwk3dqmfodm1C8IhDaqPRM4IIB/WubmZRc="
+                },
+                "fileSize": 4511
+            },
+            "invoicingDate": "2023-04-14",
+            "acquisitionTimestamp": "2023-04-14T14:05:26.722Z",
+            "subjectBy": {
+                "issuedByIdentifier": {
+                    "type": "onip",
+                    "identifier": "7777777777"
+                },
+                "issuedByName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "ABC AGD sp. z o. o."
+                }
+            },
+            "subjectTo": {
+                "issuedToIdentifier": {
+                    "type": "none"
+                },
+                "issuedToName": {
+                    "type": "pn",
+                    "tradeName": null,
+                    "firstName": "Jan",
+                    "surname": "Kowalski"
+                }
+            },
+            "net": "1667.61",
+            "vat": "383.38",
+            "gross": "2051.00",
+            "currency": "PLN"
+        },
+        {
+            "invoiceReferenceNumber": "FV/8/3/235555",
+            "ksefReferenceNumber": "7777777777-20230412-A22F47-D345EA-6B",
+            "invoiceHash": {
+                "hashSHA": {
+                    "algorithm": "SHA-256",
+                    "encoding": "Base64",
+                    "value": "8kZAhMkdLJEWOC62jvl+hFyZNeagcEJB30PAB8pJg7Y="
+                },
+                "fileSize": 1918
+            },
+            "invoicingDate": "2023-04-12",
+            "acquisitionTimestamp": "2023-04-12T13:35:07.373Z",
+            "subjectBy": {
+                "issuedByIdentifier": {
+                    "type": "onip",
+                    "identifier": "7777777777"
+                },
+                "issuedByName": {
+                    "type": "pn",
+                    "tradeName": null,
+                    "firstName": "Sprzedawca",
+                    "surname": "Testowy"
+                }
+            },
+            "subjectTo": {
+                "issuedToIdentifier": {
+                    "type": "none"
+                },
+                "issuedToName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "Nabywca Testowy"
+                }
+            },
+            "net": "15815.16",
+            "vat": "3637.49",
+            "gross": "19452.65",
+            "currency": "PLN"
+        },
+        {
+            "invoiceReferenceNumber": "FV/8/3/2344",
+            "ksefReferenceNumber": "7777777777-20230412-D3EDD4-F19EBE-D8",
+            "invoiceHash": {
+                "hashSHA": {
+                    "algorithm": "SHA-256",
+                    "encoding": "Base64",
+                    "value": "CcmPi9m7Zuzw0pO1HB5BYvvGV1Y0PnexGmwIiAZd7Nw="
+                },
+                "fileSize": 1916
+            },
+            "invoicingDate": "2023-04-12",
+            "acquisitionTimestamp": "2023-04-12T13:34:43.638Z",
+            "subjectBy": {
+                "issuedByIdentifier": {
+                    "type": "onip",
+                    "identifier": "7777777777"
+                },
+                "issuedByName": {
+                    "type": "pn",
+                    "tradeName": null,
+                    "firstName": "Sprzedawca",
+                    "surname": "Testowy"
+                }
+            },
+            "subjectTo": {
+                "issuedToIdentifier": {
+                    "type": "none"
+                },
+                "issuedToName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "Nabywca Testowy"
+                }
+            },
+            "net": "15815.16",
+            "vat": "3637.49",
+            "gross": "19452.65",
+            "currency": "PLN"
+        },
+        {
+            "invoiceReferenceNumber": "FV/12/4/23",
+            "ksefReferenceNumber": "7777777777-20230412-711375-C5DCCA-0D",
+            "invoiceHash": {
+                "hashSHA": {
+                    "algorithm": "SHA-256",
+                    "encoding": "Base64",
+                    "value": "ooUsstGUeUOlHZfd9XHVcQdmfYxMCCOF8bImsYVCKwQ="
+                },
+                "fileSize": 1915
+            },
+            "invoicingDate": "2023-04-12",
+            "acquisitionTimestamp": "2023-04-12T12:32:00.563Z",
+            "subjectBy": {
+                "issuedByIdentifier": {
+                    "type": "onip",
+                    "identifier": "7777777777"
+                },
+                "issuedByName": {
+                    "type": "pn",
+                    "tradeName": null,
+                    "firstName": "Sprzedawca",
+                    "surname": "Testowy"
+                }
+            },
+            "subjectTo": {
+                "issuedToIdentifier": {
+                    "type": "none"
+                },
+                "issuedToName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "Nabywca Testowy"
+                }
+            },
+            "net": "15815.16",
+            "vat": "3637.49",
+            "gross": "19452.65",
+            "currency": "PLN"
+        },
+        {
+            "invoiceReferenceNumber": "FV/8/3/23",
+            "ksefReferenceNumber": "7777777777-20230412-EEFD7F-E5C850-36",
+            "invoiceHash": {
+                "hashSHA": {
+                    "algorithm": "SHA-256",
+                    "encoding": "Base64",
+                    "value": "JjOvBTdRq6jK4dtwtbFDKPTzsIcNwzDjtl8QeYssWms="
+                },
+                "fileSize": 1914
+            },
+            "invoicingDate": "2023-04-12",
+            "acquisitionTimestamp": "2023-04-12T12:29:42.654Z",
+            "subjectBy": {
+                "issuedByIdentifier": {
+                    "type": "onip",
+                    "identifier": "7777777777"
+                },
+                "issuedByName": {
+                    "type": "pn",
+                    "tradeName": null,
+                    "firstName": "Sprzedawca",
+                    "surname": "Testowy"
+                }
+            },
+            "subjectTo": {
+                "issuedToIdentifier": {
+                    "type": "none"
+                },
+                "issuedToName": {
+                    "type": "fn",
+                    "tradeName": null,
+                    "fullName": "Nabywca Testowy"
+                }
+            },
+            "net": "15815.16",
+            "vat": "3637.49",
+            "gross": "19452.65",
+            "currency": "PLN"
+        }
+    ]
